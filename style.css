@@ -21,7 +21,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 1.5rem 10%;
-    background: #fff;
+    background-image: photo.jpg;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     position: sticky;
     top: 0;
@@ -190,4 +190,5 @@ h2 {
     .hero h1 {
         font-size: 2rem;
     }
+
 }
