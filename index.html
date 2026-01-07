@@ -4,70 +4,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Junior Web Developer | Portfolio</title>
+    <title>Web Developer Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
-    <nav class="navbar">
-        <div class="logo">My<span>Portfolio</span></div>
-        <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
-    <header class="hero">
-        <div class="hero-content">
-            <h1>Hi, I'm <span class="highlight">Zwe Htet Naing</span></h1>
-            <p>Junior Web Developer specializing in HTML & CSS & BOOTSTRAP</p>
-            <a href="#projects" class="btn">View My Work</a>
-        </div>
+    <!-- Header / Navigation -->
+    <header>
+        <nav>
+            <div class="logo">MyPortfolio</div>
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <section id="skills" class="skills">
-        <h2>Technical Skills</h2>
+    <!-- Home Section -->
+    <section id="home">
+        <div class="home-content">
+            <img src="photo.jpg" alt="Profile Photo" class="profile-photo">
+            <h1>Hello, I'm <span>Your Name</span></h1>
+            <p>I'm a passionate Web Developer creating modern and responsive websites.</p>
+            <a href="#contact" class="btn">Hire Me</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a web developer with experience in HTML, CSS, JavaScript, and modern frameworks. I love building interactive and user-friendly websites.</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>My Skills</h2>
         <div class="skills-container">
-            <div class="skill-card">HTML5</div>
-            <div class="skill-card">CSS3</div>
-            <div class="skill-card">JAVASCRIPT</div>
-            <div class="skill-card">JQUERY</div>
-            <div class="skill-card">BOOTSTRAP</div>
-            <div class="skill-card">PHP</div>
-            <div class="skill-card">LARAVEL</div>
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">React</div>
+            <div class="skill">Node.js</div>
         </div>
     </section>
 
-    <section id="projects" class="projects">
-        <h2>Featured Projects</h2>
-        <div class="project-grid">
-            <div class="project-card">
-                <h3>Movies Channel Project</h3>
-                <p>A responsive landing page built with pure HTML and CSS focusing on semantic structure.</p>
-                <div class="tags"><span>HTML</span> <span>CSS</span><span>Bootstrap</span></div>
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects-container">
+            <div class="project">
+                <h3>Project 1</h3>
+                <p>Brief description of your project.</p>
+                <a href="#" target="_blank">View Project</a>
             </div>
-            <div class="project-card">
-                <h3>Mobile Phone Sale System</h3>
-                <p>A website that has user interface and admin interface is useful for phone shops to sale on online markets.</p>
-                <div class="tags"><span>PHP</span> <span>Laravel</span></div>
+            <div class="project">
+                <h3>Project 2</h3>
+                <p>Brief description of your project.</p>
+                <a href="#" target="_blank">View Project</a>
+            </div>
+            <div class="project">
+                <h3>Project 3</h3>
+                <p>Brief description of your project.</p>
+                <a href="#" target="_blank">View Project</a>
             </div>
         </div>
     </section>
 
-    <footer id="contact" class="contact">
-        <h2>Get In Touch</h2>
-        <p>I'm currently looking for new opportunities!</p>
-        <div class="social-links">
-            <a href="kozwehtet3@gmail.com">Email</a>
-            <a href="https://github.com/yourusername">GitHub</a>
-            <a href="https://linkedin.com/in/yourusername">LinkedIn</a>
-        </div>
-        <p class="copyright">This is my Portfolio produced by Zwe Htet Naing</p>
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Your Name. All Rights Reserved.</p>
     </footer>
 
+    <!-- JavaScript for Hamburger Menu -->
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
 </body>
 
 </html>
